@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>expressMed</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Кабинет пациента </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Лаборатория</a>
+              <li class="nav-item">
+                <a class="nav-link disabled">Контакты</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Найти</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="main">
+      <div class="offe">Результаты проверки лабораторного исследования</div>
+      <div class="med">
+        Информация о заказчике:
+        Заказано: ДЕ****** ИС******** ДИ*********
+        <p>Дата рождения: 11.11.1994</p> 
+        
+      </div>
+      <div class="tabl">
+        <table class="resp-tab">
+          <thead>
+            <tr>
+              <th>Тест</th>
+              <th>Результат</th>
+              <th>Реферальное значение</th>
+              <th>Дата</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="blue"></span >Coronavirus SARS-CoV-2, РНК [Real-Time PCR]</td>
+              <td class="green"></span>Отрицательный</td>
+              <td></span>Отрицательный</td>
+              <td></span>28.07.2021 10:00:04</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="result">
+        Результаты исследований не являются диагнозом. Необходима консультация специалиста.
+      </div>
+    </div>
+
+    <footer class="foot">
+      <div class="footer-gray">
+        <div class="footer-custom">
+          <div class="footer-lists">
+            <div class="footer-list-wrap">
+              <h6 class="ftr-hdr">Медцентр Лесная</h6>
+              <ul class="ftr-links-sub">
+                <li>8 (812) 380-43-03</li>
+              </ul>
+              <h6 class="ftr-hdr">Медцентр</h6>
+              <ul class="ftr-links-sub">
+                <li><a href="http://www.art.fr" rel="nofollow">Купчино</a></li>
+                <li><a href="https://www.art.co.uk" rel="nofollow">Лесная</a></li>
+              </ul>
+            </div>
+            <!--/.footer-list-wrap-->
+            <div class="footer-list-wrap">
+              <h6 class="ftr-hdr">Прием врачей</h6>
+              <ul class="ftr-links-sub">
+                <li><a href="/help/talktous.html" rel="nofollow">Анализы</a></li>
+                <li><a href="/help/placingorders.html" rel="nofollow">Каталог услуг</a></li>
+                <li><a href="/help/shipping.html" rel="nofollow">Вызов врача на дом</a></li>
+                <li><a href="/help/shippingreturns.html" rel="nofollow">Медкомиссии</a></li>
+                <li><a href="/help/international-shipping.html" rel="nofollow">Медицинские книжки</a></li>
+              </ul>
+            </div>
+            <div class="footer-list-wrap">
+              <h6 class="ftr-hdr">Услуги</h6>
+              <ul class="ftr-links-sub">
+                <li><a href="/asp/aboutus/default-asp/_/posters.htm" rel="nofollow">Флюорография</a></li>
+                <li><a href="http://corporate.art.com/careers" rel="nofollow">Стамотология</a></li>
+                <li><a href="/asp/landing/artistrising" rel="nofollow">УЗИ</a></li>
+                <li><a href="/~/art-for-business" rel="nofollow">Медцентры</a></li>
+
+              </ul>
+            </div>
+            <!--/.footer-list-wrap-->
+            <div class="footer-list-wrap">
+              <h6 class="ftr-hdr">Лаборатория</h6>
+              <ul class="ftr-links-sub">
+                <art:content rule="!loggedin">
+                  <li class="ftr-Login"><span class="link login-trigger">Косметология</span></li>
+                  <li><span class="link" onclick="link('/asp/secure/your_account/track_orders-asp/_/posters.htm')">
+                      Компаниям</span></li>
+                </art:content>
+                <art:content rule="loggedin">
+                  <li class="ftr-Login"><span class="link ftr-access-my-account">ДМС</span></li>
+                  <li><span class="link" onclick="window.location.href = getProfileKey() + '?pagetype=oh';">О нас</span></li>
+                </art:content>
+              </ul>
+            </div>
+            <!--/.footer-list-wrap-->
+          </div>
+          <!--/.footer-lists-->
+          <div class="footer-email">
+            <h6 class="ftr-hdr">Оставьте свой email</h6>
+            <div id="ftr-email" class="ftr-email-form">
+              <form id="ftrEmailForm" method="post" action="http://em.art.com/pub/rf">
+                <div class="error">Please enter a valid email address</div>
+                <input type="text" name="email_address_" id="ftrEmailInput" class="input"
+                  placeholder="Enter email address" />
+                <!--
+                  -->
+                <input type="submit" class="button" value="отправить" />
+                <input type="hidden" name="country_iso2" value="">
+                <input type="hidden" name="language_iso2" value="en">
+                <input type="hidden" name="site_domain" value="art.com">
+                <input type="hidden" name="email_acq_source" value="01-000001">
+                <input type="hidden" name="email_acq_date" value="" id="ftr-email-date">
+                <input type="hidden" name="brand_id" value="ART">
+                <input type="hidden" name="_ri_"
+                  value="X0Gzc2X%3DWQpglLjHJlYQGnp51yrMf2qXdC9tjU8pzgMtwfYzaVwjpnpgHlpgneHmgJoXX0Gzc2X%3DWQpglLjHJlYQGnyLSq2fzdkuzdzglHMsUhgeNzaSgkk">
+              </form>
+            </div>
+            <!--/.ftr-email-form-->
+            <div class="ftr-email-privacy-policy"></div>
+          </div>
+          <!--/.footer-email-->
+          <div class="footer-social">
+            <h6 class="ftr-hdr">Смотри нас</h6>
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/art.com" title="Facebook"
+                  onclick="_gaq.push(['_trackSocial', 'Facebook', 'Follow', 'Footer', 'undefined', 'True']);">
+                  <img width="24" height="24" alt="Like us on Facebook"
+                    src="http://cache1.artprintimages.com/images/jump_pages/rebrand/footer/fb.png">
+                </a>
+              </li>
+              <li>
+                <a href="https://plus.google.com/108089796661280870153" title="Google+"
+                  onclick="_gaq.push(['_trackSocial', 'GooglePlus', 'Follow', 'Footer', 'undefined', 'True']);">
+                  <img width="24" height="24" alt="Follow us on Google+"
+                    src="http://cache1.artprintimages.com/images/jump_pages/rebrand/footer/gplus.png">
+                </a>
+              </li>
+              <li>
+                <a href="https://pinterest.com/artdotcom/" target="_blank">
+                  <img width="24" height="24" alt="Follow us on Pinterest"
+                    src="http://cache1.artprintimages.com/images/jump_pages/rebrand/footer/pin-badge.png">
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="http://instagram.com/artdotcom/">
+                  <img width="24" height="24" alt="Follow us on Instagram"
+                    src="http://cache1.artprintimages.com/images/jump_pages/rebrand/footer/instagram-badge.png">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com/artdotcom" title="Twitter"
+                  onclick="_gaq.push(['_trackSocial', 'Twitter', 'Follow', 'Footer', 'undefined', 'True']);">
+                  <img width="67" alt="Follow us on Twitter"
+                    src="http://cache1.artprintimages.com/images/jump_pages/rebrand/footer/twitter.png">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--/.footer-social-->
+          <div class="footer-legal">
+            <p>&copy; Лицензия №ЛО-78-01-009519
+              от 27.12.2018, ООО «МЕДСЕРВИС»<a href="/help/privacy-policy.html" rel="nofollow">
+                </a> <a href="/help/terms-of-use.html" rel="nofollow"></a><a
+                href="/help/terms-of-sale.html" rel="nofollow"></a></p>
+            <p>Лицензия №ЛО-78-01-009541 от 16.01.2019, ООО «ЭКСПРЕССМЕДСЕРВИС»</p>
+          </div>
+          <!--/.footer-legal-->
+          <div class="footer-payment">
+            <ul>
+              <li class="ftr-stella">
+                <span title="Stella Service" onclick="openLink('http://www.stellaservice.com/profile/Art.com/')"></span>
+              </li>
+              <li>
+                <span onclick="clickTrack(); return false;" onmouseover="this.style.cursor='pointer'"><img border="0"
+                    alt="HACKER SAFE certified sites prevent over 99.9% of hacker crime."
+                    src="https://images.scanalert.com/meter/www.art.com/31.gif"></span>
+              </li>
+              <li class="ftr-bbb">
+                <span title="BBB"
+                  onclick="openLink('http://www.bbb.org/raleigh-durham/business-reviews/art-suppliers/artcom-inc-in-raleigh-nc-5001914')"></span>
+              </li>
+            </ul>
+          </div>
+          <!--/.footer-payment-->
+        </div>
+        <!--/.footer-custom-->
+      </div>
+      <!--/.footer-gray-->
+    </footer>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
